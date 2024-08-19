@@ -1,2 +1,2 @@
-# CodingDairy
+# CodingDiary
 Java language (DSA)
