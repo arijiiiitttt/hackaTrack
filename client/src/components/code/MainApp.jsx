@@ -10,7 +10,7 @@ const avatars = [
   'https://i.pravatar.cc/40?img=5',
 ];
 
-const dynamicWords = ['builders', 'hackers', 'developers', 'designers', 'founders'];
+const dynamicWords = ['builders', 'hackers','students', 'developers', 'designers', 'founders'];
 
 const MainApp = () => {
   const [index, setIndex] = useState(0);
@@ -54,7 +54,7 @@ const MainApp = () => {
       <motion.div className="text-center max-w-2xl" variants={itemVariants}>
         {/* Avatar and stars */}
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4"
+          className="flex flex-col sm:flex-row items-center justify-center gap-2 mb-4"
           variants={itemVariants}
         >
           <div className="flex items-center -space-x-2">
@@ -72,7 +72,7 @@ const MainApp = () => {
               <FaStar key={i} />
             ))}
             <span className="text-gray-700 ml-2">
-              Trusted by 500+ college Students
+              Trusted by 500+ College Students
             </span>
           </div>
         </motion.div>
@@ -93,17 +93,20 @@ const MainApp = () => {
           className="text-gray-600 mt-4 pt-1 text-base sm:text-lg"
           variants={itemVariants}
         >
-          Curated free tools, software credits, and fellowships for college builders.<br />
-          Everything you need to build without breaking the bank.
+        I've gathered the best hackathons in one place,
+         complete with details on prizes, technologies, and eligibility. Find your perfect 
+         challenge today!
         </motion.p>
 
         {/* Button */}
-        <motion.button
-          className="mt-6 px-6 py-3 bg-black text-white rounded-md text-sm font-medium hover:bg-gray-800 transition"
+       <a href='/content'>
+         <motion.button
+          className="mt-6 px-6 py-3 bg-black text-white rounded-md text-sm font-medium hover:bg-red-500 transition"
           variants={itemVariants}
         >
           View Dashboard →
         </motion.button>
+        </a>
       </motion.div>
     </motion.div>
   );
