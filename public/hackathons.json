@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Hack the Future",
+    "date": "Aug 15 – Aug 17, 2025",
+    "description": "48-hour global hackathon focused on building AI solutions.",
+    "link": "https://devpost.com/hackthefuture"
+  },
+  {
+    "name": "MLH Global Hack Week",
+    "date": "Sep 1 – Sep 7, 2025",
+    "description": "A fun online event from Major League Hacking!",
+    "link": "https://mlh.io/events"
+  },
+  {
+    "name": "HackerEarth Innovation Hackathon",
+    "date": "Oct 10 – Oct 12, 2025",
+    "description": "Solve real-world challenges in this HackerEarth hosted event.",
+    "link": "https://www.hackerearth.com/challenges/"
+  }
+]
