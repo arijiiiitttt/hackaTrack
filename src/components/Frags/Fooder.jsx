@@ -2,7 +2,7 @@ import React from 'react';
 
 const Fooder = () => {
   return (
-    <div className="bg-red-100/50 shadow-md text-black px-6 py-16 md:px-20">
+    <div className="bg-blue-100/50 shadow-md text-black px-6 py-16 md:px-20">
       {/* Top Section */}
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">

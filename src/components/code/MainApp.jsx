@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { FaStar } from 'react-icons/fa';
 import { motion, useInView } from 'framer-motion'; // Import motion and useInView
+import Fooder from '../Frags/Fooder';
+import Navbar from '../Frags/Navbar';
 
 const avatars = [
   'https://i.pravatar.cc/40?img=1',
@@ -44,6 +46,8 @@ const MainApp = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <motion.div
       ref={ref}
       className="min-h-screen flex items-center justify-center bg-white px-4"
@@ -109,6 +113,8 @@ const MainApp = () => {
         </a>
       </motion.div>
     </motion.div>
+    <Fooder />
+    </>
   );
 };
 

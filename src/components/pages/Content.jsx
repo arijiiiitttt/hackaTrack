@@ -4,9 +4,6 @@ import HackathonCard from '../Frags/HackathonCard';
 import FilterBar from '../Frags/FilterBar';
 import Pagination from '../Frags/Pagination';
 
-
-
-
 const ITEMS_PER_PAGE = 6;
 
 const Content = () => {
@@ -46,6 +43,7 @@ const Content = () => {
   const pageCount = Math.ceil(filtered.length / ITEMS_PER_PAGE);
 
   return (
+    <>
     <div className="p-4">
       <FilterBar platform={platform} setPlatform={setPlatform} />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -53,6 +51,8 @@ const Content = () => {
       </div>
       <Pagination page={page} setPage={setPage} total={pageCount} />
     </div>
+   
+    </>
   );
 };
 

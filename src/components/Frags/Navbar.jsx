@@ -1,3 +1,4 @@
+import { UserButton } from '@clerk/clerk-react';
 import React from 'react';
 
 const Navbar = () => {
@@ -6,11 +7,10 @@ const Navbar = () => {
       
       {/* Logo and Title */}
       <div className="flex items-center text-lg space-x-2">
-        {/* Replace icon with image */}
         <img 
-          src="/logos/logo.png" 
+          src="/logos/hack.jpg" 
           alt="Logo" 
-          className="w-8 h-8" // adjust size as needed
+          className="w-8 h-8" 
         />
         <a href="/" className="text-base font-semibold text-black">
           HackaTrack
@@ -18,13 +18,14 @@ const Navbar = () => {
       </div>
 
       {/* Navigation Links */}
-      <div>
+      <div className='items-center'>
         <a
           href="/about"
           className="text-base text-gray-600 hover:text-black transition-colors"
         >
           About
         </a>
+          <UserButton afterSignOutUrl="/"/>
       </div>
     </nav>
   );
